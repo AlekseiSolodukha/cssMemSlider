@@ -197,6 +197,23 @@ img{
   transform: translateX(-300%);
 }
 
+/*Navigation hoovering*/
+#image_1:checked ~ .nav-wrapper .slider-navbar .nav-circule-wrapper .circule_1{
+  background-color: var(--color-nav);
+}
+
+#image_2:checked ~ .nav-wrapper .slider-navbar .nav-circule-wrapper .circule_2{
+  background-color: var(--color-nav);
+}
+
+#image_3:checked ~ .nav-wrapper .slider-navbar .nav-circule-wrapper .circule_3{
+  background-color: var(--color-nav);
+}
+
+#image_4:checked ~ .nav-wrapper .slider-navbar .nav-circule-wrapper .circule_4{
+  background-color: var(--color-nav);
+}
+
 @media (max-width: 375px) {
   .nav-wrapper{
     flex-direction: column-reverse;
