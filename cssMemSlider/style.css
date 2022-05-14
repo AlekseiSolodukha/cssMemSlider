@@ -129,6 +129,39 @@ img{
   border-color: var(--color-nav-whileClikc);
 }
 
+/*Image sliding*/
+#image_1:checked ~ .image-wrapper .slider-images li:nth-of-type(1) {
+  transform: translateX(0%);
+}
+
+#image_2:checked ~ .image-wrapper .slider-images li:nth-of-type(2),
+#image_2:checked ~ .image-wrapper .slider-images li:nth-of-type(1){
+  transform: translateX(-100%) rotate(360deg);
+}
+
+#image_3:checked ~ .image-wrapper .slider-images li:nth-of-type(3) {
+  transform: translateX(-200%);
+}
+#image_3:checked ~ .image-wrapper .slider-images li:nth-of-type(1){
+  transform: translateX(-150%);  
+}
+#image_3:checked ~ .image-wrapper .slider-images li:nth-of-type(2){
+  transform: translateX(-200%); 
+}
+
+#image_4:checked ~ .image-wrapper .slider-images li:nth-of-type(4) {
+  transform: translateX(-300%) rotate(360deg);;
+}
+#image_4:checked ~ .image-wrapper .slider-images li:nth-of-type(1){
+  transform: translateX(-150%);  
+}
+#image_4:checked ~ .image-wrapper .slider-images li:nth-of-type(2) {
+  transform: translateX(-200%);
+}
+#image_4:checked ~ .image-wrapper .slider-images li:nth-of-type(3) {
+  transform: translateX(-300%);
+}
+
 
 
 @media (max-width: 768px) {
