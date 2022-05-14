@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CssMemSlider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="slider-wrapper">
+      <input type="radio" name="images" id="image_1" checked>
+      <input type="radio" name="images" id="image_2">
+      <input type="radio" name="images" id="image_3">
+      <input type="radio" name="images" id="image_4">
+      <div class="image-wrapper">
+        <ul class="slider-images">
+          <li class="slide_img">
+            <img src="./assets/images/mem1.png" alt="Mem slide">
+          </li>
+          <li class="slide_img">
+            <img src="./assets/images/mem2.png" alt="Mem slide">
+          </li>
+          <li class="slide_img">
+            <img src="./assets/images/mem3.png" alt="Mem slide">
+          </li>
+          <li class="slide_img">
+            <img src="./assets/images/mem4.jpeg" alt="Mem slide">
+          </li>
+        </ul>      
+      </div>
+      <div class="nav-wrapper">
+        <div class="slider-text-wrapper">
+          <div class="slider-text_content">
+            <span for="image_1" class="slider-text">Functions reference each other a lot when talking</span>
+            <span for="image_2" class="slider-text">Programmer YouTubers should be called the oracle because they have all the answers</span>
+            <span for="image_3" class="slider-text">My brain can do multithreading. It’s not good at it, but at least it can do it</span>
+            <span for="image_4" class="slider-text">Code works in mysterious ways</span>
+          </div>        
+        </div>
+        <div class="slider-navbar">
+          <label for="image_1" class="nav-circule-wrapper">
+            <div class="nav-circule circule_1"></div>
+          </label>
+          <label for="image_2" class="nav-circule-wrapper">
+            <div class="nav-circule circule_2"></div>
+          </label>
+          <label for="image_3" class="nav-circule-wrapper">
+            <div class="nav-circule circule_3"></div>
+          </label>
+          <label for="image_4" class="nav-circule-wrapper">
+            <div class="nav-circule circule_4"></div>
+          </label>
+        </div>
+      </div>
+    </div>         
+  </div>   
+</body>
+</html>
