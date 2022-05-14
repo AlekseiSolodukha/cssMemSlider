@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+:root {
+  --color-text: #F2EBE5;
+  --color-nav: #FFA101;
+  --color-nav-hover: #FFA101;
+  --color-nav-whileClikc: #ecd7b2;
+  --color-background: #31525B;
+  --color-boarder: #FFA101;
+  --font-weight: 300;
+  --font-family-Roboto: 'Roboto', sans-serif;
+  --width-wrapper: 62em;
+}
+
+html, body{
+  background: var(--color-background);
+}
+
+input{
+  display: none;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 92.5em;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.slider-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  max-width: var(--width-wrapper);
+  width: 100%;
+  padding: 0 2%;
+}
+
+.image-wrapper{  
+  width: 100%;
+  border: 0.2em solid var(--color-boarder);
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.slider-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400%;  
+}
+
+.slide_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  transition: all 0.5s ease-in-out;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 2em;
+  column-gap: 2em;
+  width: 100%;
+}
+
+.slider-text-wrapper{
+  width: 75%;
+  overflow: hidden;
+}
+
+.slider-text_content{
+  display: flex;
+  width: 400%;
+}
+
+.slider-text{
+  width: 25%;
+  font-family: var(--font-family-Roboto);
+  font-weight: var(--font-weight);
+  color: var(--color-text);
+  transition: all 0.5s;
+}
+
+.slider-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.nav-circule-wrapper{
+  width: 25%;
+  padding: 0.5em 0.5em;
+  cursor: pointer;
+}
+
+.nav-circule{
+  width: 0.8em;
+  height: 0.8em;
+  border: 0.2em solid var(--color-nav);
+  border-radius: 50%;
+}
+
+.nav-circule-wrapper:hover .nav-circule{
+  transition: all 0.3s;
+  background-color: var(--color-nav);
+}
+
+.nav-circule-wrapper:active .nav-circule{
+  background-color: var(--color-nav-whileClikc);
+  border-color: var(--color-nav-whileClikc);
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .slider-text-wrapper{
+    width: 100%;
+  }
+} 
