@@ -214,7 +214,7 @@ img{
   background-color: var(--color-nav);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .nav-wrapper{
     flex-direction: column-reverse;
   }
